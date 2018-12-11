@@ -7,6 +7,7 @@ Tested on Windows 10 1803.
 
 
 # Screen recording
-![](Example\TabTip issue in fullscreen.gif)
 
-![](Example\TabTip issue in fullscreen.webm)
+![gif](/Example/TabTip_issue_in_fullscreen.gif)
+
+![webm](/Example/TabTip_issue_in_fullscreen.webm)
