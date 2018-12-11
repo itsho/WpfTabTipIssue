@@ -6,6 +6,7 @@
         mc:Ignorable="d"
         Width="800"
         SizeToContent="Height"
+        WindowStyle="None"
         WindowState="Maximized"
         Title="MainWindow">
     <Window.Resources>
@@ -20,16 +21,17 @@
                     Value="80" />
         </Style>
     </Window.Resources>
-    <DockPanel>
+    <DockPanel x:Name="rootScrollViewer">
         <StackPanel DockPanel.Dock="Top">
             <Button Margin="50"
                     Click="ButtonBase_OnClick">Open TabTip</Button>
-            <TextBlock Text="When opening TabTip, the last TextBoxes on the page are unavailable"
+            <TextBlock Text="Click on the 8th TextBox, then open TabTip"
                        TextAlignment="Center"
                        Foreground="Red"
                        FontSize="15" />
         </StackPanel>
-        <ScrollViewer>
+        <ScrollViewer >
+            
             <StackPanel>
 
                 <TextBox BorderBrush="LightBlue"
@@ -46,7 +48,8 @@
                          Text="6"></TextBox>
                 <TextBox BorderBrush="LightBlue"
                          Text="7"></TextBox>
-                <TextBox BorderBrush="LightBlue"
+                <TextBox x:Name="textBox8" 
+                         BorderBrush="LightBlue"
                          Text="8"></TextBox>
             </StackPanel>
         </ScrollViewer>
