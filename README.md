@@ -10,4 +10,4 @@ Tested on Windows 10 1803.
 
 ![gif](/Example/TabTip_issue_in_fullscreen.gif)
 
-![webm](/Example/TabTip_issue_in_fullscreen.webm)
+[webm link](/Example/TabTip_issue_in_fullscreen.webm)
