@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfTabTipIssue.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		mc:Ignorable="d"
+		Width="800"
+		SizeToContent="Height"
+		WindowState="Maximized"
+		Title="MainWindow">
+	<Window.Resources>
+		<Style TargetType="{x:Type TextBox}">
+			<Setter Property="Margin" Value="80" />
+			<Setter Property="FontSize" Value="80" />
+		</Style>
+		<Style TargetType="{x:Type Button}">
+			<Setter Property="FontSize" Value="80" />
+		</Style>
+	</Window.Resources>
+	<ScrollViewer>
+		<StackPanel>
+			<Button Margin="50" Click="ButtonBase_OnClick">Open TabTip</Button>
+			<TextBlock Text="When opening TabTip, the last TextBoxes on the page are unavailable" 
+			           TextAlignment="Center"
+			           Foreground="Red" 
+			           FontSize="15"/>
+			<TextBox BorderBrush="LightBlue" Text="1"></TextBox>
+			<TextBox BorderBrush="LightBlue" Text="2"></TextBox>
+			<TextBox BorderBrush="LightBlue" Text="3"></TextBox>
+			<TextBox BorderBrush="LightBlue" Text="4"></TextBox>
+			<TextBox BorderBrush="LightBlue" Text="5"></TextBox>
+			<TextBox BorderBrush="LightBlue" Text="6"></TextBox>
+			<TextBox BorderBrush="LightBlue" Text="7"></TextBox>
+			<TextBox BorderBrush="LightBlue" Text="8"></TextBox>
+
+		</StackPanel>
+	</ScrollViewer>
+</Window>
